@@ -1,0 +1,14 @@
+#insert new lines between prompts
+add_newline = true
+
+[character]
+success_symbol = '[->](bold green)'
+
+[dotnet]
+style = '#9d71d8'
+heuristic = false
+format = 'via [$symbol($version)]($style)'
+version_format = '${raw}'
+
+[username]
+show_always = true
