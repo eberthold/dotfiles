@@ -1,0 +1,463 @@
+{
+  "ActivationHotkey": "LWin_LShiftKey",
+  "ShowStartupWindow": false,
+  "AllocateNewPanelSpace": true,
+  "AutoCollapsePanels": true,
+  "AnimateWindowMovement": true,
+  "ModifierMoveWindow": false,
+  "ModifierMoveWindowAutoFocus": true,
+  "WindowPadding": 4,
+  "PanelHeight": 18,
+  "PanelFontSize": 12,
+  "ShowFocusDuringAction": true,
+  "OverrideAccentColor": false,
+  "CustomAccentColor": "#0000FFFF",
+  "Keybindings": {
+    "ToggleManager": {
+      "IsDirectMode": false,
+      "Keys": [
+        "F11"
+      ]
+    },
+    "RefreshWorkspace": {
+      "IsDirectMode": false,
+      "Keys": [
+        "R"
+      ]
+    },
+    "Cancel": {
+      "IsDirectMode": false,
+      "Keys": [
+        "Escape"
+      ]
+    },
+    "MoveFocusLeft": {
+      "IsDirectMode": true,
+      "Keys": [
+        "LeftAlt",
+        "H"
+      ]
+    },
+    "MoveFocusUp": {
+      "IsDirectMode": true,
+      "Keys": [
+        "LeftAlt",
+        "K"
+      ]
+    },
+    "MoveFocusRight": {
+      "IsDirectMode": true,
+      "Keys": [
+        "LeftAlt",
+        "L"
+      ]
+    },
+    "MoveFocusDown": {
+      "IsDirectMode": true,
+      "Keys": [
+        "LeftAlt",
+        "J"
+      ]
+    },
+    "ShowDesktop": {
+      "IsDirectMode": false,
+      "Keys": [
+        "D"
+      ]
+    },
+    "CreateHorizontalPanel": {
+      "IsDirectMode": true,
+      "Keys": [
+        "LeftAlt",
+        "LeftShift",
+        "V"
+      ]
+    },
+    "CreateVerticalPanel": {
+      "IsDirectMode": true,
+      "Keys": [
+        "LeftAlt",
+        "V"
+      ]
+    },
+    "CreateStackPanel": {
+      "IsDirectMode": true,
+      "Keys": [
+        "LeftAlt",
+        "S"
+      ]
+    },
+    "PullWindowUp": {
+      "IsDirectMode": false,
+      "Keys": [
+        "Return"
+      ]
+    },
+    "ToggleFloatingMode": {
+      "IsDirectMode": true,
+      "Keys": [
+        "LeftAlt",
+        "T"
+      ]
+    },
+    "MoveLeft": {
+      "IsDirectMode": true,
+      "Keys": [
+        "LeftShift",
+        "LeftAlt",
+        "H"
+      ]
+    },
+    "MoveUp": {
+      "IsDirectMode": true,
+      "Keys": [
+        "LeftAlt",
+        "LeftShift",
+        "K"
+      ]
+    },
+    "MoveRight": {
+      "IsDirectMode": true,
+      "Keys": [
+        "LeftAlt",
+        "LeftShift",
+        "L"
+      ]
+    },
+    "MoveDown": {
+      "IsDirectMode": true,
+      "Keys": [
+        "LeftAlt",
+        "LeftShift",
+        "J"
+      ]
+    },
+    "SwapLeft": {
+      "IsDirectMode": false,
+      "Keys": [
+        "LeftAlt",
+        "LeftShift",
+        "H"
+      ]
+    },
+    "SwapUp": null,
+    "SwapRight": null,
+    "SwapDown": null,
+    "IncreaseWidth": {
+      "IsDirectMode": true,
+      "Keys": [
+        "LeftAlt",
+        "O"
+      ]
+    },
+    "IncreaseHeight": {
+      "IsDirectMode": true,
+      "Keys": [
+        "LeftAlt",
+        "I"
+      ]
+    },
+    "DecreaseWidth": {
+      "IsDirectMode": true,
+      "Keys": [
+        "LeftAlt",
+        "Y"
+      ]
+    },
+    "DecreaseHeight": {
+      "IsDirectMode": true,
+      "Keys": [
+        "LeftAlt",
+        "U"
+      ]
+    },
+    "SwitchToPreviousDesktop": {
+      "IsDirectMode": false,
+      "Keys": [
+        "Q"
+      ]
+    },
+    "SwitchToDesktop1": {
+      "IsDirectMode": true,
+      "Keys": [
+        "LeftAlt",
+        "D1"
+      ]
+    },
+    "SwitchToDesktop2": {
+      "IsDirectMode": true,
+      "Keys": [
+        "LeftAlt",
+        "D2"
+      ]
+    },
+    "SwitchToDesktop3": {
+      "IsDirectMode": true,
+      "Keys": [
+        "LeftAlt",
+        "D3"
+      ]
+    },
+    "SwitchToDesktop4": {
+      "IsDirectMode": true,
+      "Keys": [
+        "LeftAlt",
+        "D4"
+      ]
+    },
+    "SwitchToDesktop5": {
+      "IsDirectMode": true,
+      "Keys": [
+        "LeftAlt",
+        "D5"
+      ]
+    },
+    "SwitchToDesktop6": {
+      "IsDirectMode": true,
+      "Keys": [
+        "LeftAlt",
+        "D6"
+      ]
+    },
+    "SwitchToDesktop7": {
+      "IsDirectMode": true,
+      "Keys": [
+        "LeftAlt",
+        "D7"
+      ]
+    },
+    "SwitchToDesktop8": {
+      "IsDirectMode": true,
+      "Keys": [
+        "LeftAlt",
+        "D8"
+      ]
+    },
+    "SwitchToDesktop9": {
+      "IsDirectMode": true,
+      "Keys": [
+        "LeftAlt",
+        "D9"
+      ]
+    },
+    "MoveToPreviousDesktop": {
+      "IsDirectMode": false,
+      "Keys": [
+        "LeftShift",
+        "Q"
+      ]
+    },
+    "MoveToDesktop1": {
+      "IsDirectMode": true,
+      "Keys": [
+        "LeftShift",
+        "LeftAlt",
+        "D1"
+      ]
+    },
+    "MoveToDesktop2": {
+      "IsDirectMode": true,
+      "Keys": [
+        "LeftAlt",
+        "LeftShift",
+        "D2"
+      ]
+    },
+    "MoveToDesktop3": {
+      "IsDirectMode": true,
+      "Keys": [
+        "LeftAlt",
+        "LeftShift",
+        "D3"
+      ]
+    },
+    "MoveToDesktop4": {
+      "IsDirectMode": true,
+      "Keys": [
+        "LeftAlt",
+        "LeftShift",
+        "D4"
+      ]
+    },
+    "MoveToDesktop5": {
+      "IsDirectMode": true,
+      "Keys": [
+        "LeftAlt",
+        "LeftShift",
+        "D5"
+      ]
+    },
+    "MoveToDesktop6": {
+      "IsDirectMode": true,
+      "Keys": [
+        "LeftAlt",
+        "LeftShift",
+        "D6"
+      ]
+    },
+    "MoveToDesktop7": {
+      "IsDirectMode": true,
+      "Keys": [
+        "LeftShift",
+        "LeftAlt",
+        "D7"
+      ]
+    },
+    "MoveToDesktop8": {
+      "IsDirectMode": true,
+      "Keys": [
+        "LeftAlt",
+        "LeftShift",
+        "D8"
+      ]
+    },
+    "MoveToDesktop9": {
+      "IsDirectMode": true,
+      "Keys": [
+        "LeftShift",
+        "LeftAlt",
+        "D9"
+      ]
+    },
+    "SwitchToPreviousDisplay": {
+      "IsDirectMode": false,
+      "Keys": [
+        "E"
+      ]
+    },
+    "SwitchToDisplay1": {
+      "IsDirectMode": false,
+      "Keys": [
+        "F1"
+      ]
+    },
+    "SwitchToDisplay2": {
+      "IsDirectMode": false,
+      "Keys": [
+        "F2"
+      ]
+    },
+    "SwitchToDisplay3": {
+      "IsDirectMode": false,
+      "Keys": [
+        "F3"
+      ]
+    },
+    "SwitchToDisplay4": {
+      "IsDirectMode": false,
+      "Keys": [
+        "F4"
+      ]
+    },
+    "SwitchToDisplay5": {
+      "IsDirectMode": false,
+      "Keys": [
+        "F5"
+      ]
+    },
+    "SwitchToDisplay6": {
+      "IsDirectMode": false,
+      "Keys": [
+        "F6"
+      ]
+    },
+    "SwitchToDisplay7": {
+      "IsDirectMode": false,
+      "Keys": [
+        "F7"
+      ]
+    },
+    "SwitchToDisplay8": {
+      "IsDirectMode": false,
+      "Keys": [
+        "F8"
+      ]
+    },
+    "SwitchToDisplay9": {
+      "IsDirectMode": false,
+      "Keys": [
+        "F9"
+      ]
+    },
+    "MoveToPreviousDisplay": {
+      "IsDirectMode": false,
+      "Keys": [
+        "LeftShift",
+        "E"
+      ]
+    },
+    "MoveToDisplay1": {
+      "IsDirectMode": false,
+      "Keys": [
+        "LeftShift",
+        "F1"
+      ]
+    },
+    "MoveToDisplay2": {
+      "IsDirectMode": false,
+      "Keys": [
+        "LeftShift",
+        "F2"
+      ]
+    },
+    "MoveToDisplay3": {
+      "IsDirectMode": false,
+      "Keys": [
+        "LeftShift",
+        "F3"
+      ]
+    },
+    "MoveToDisplay4": {
+      "IsDirectMode": false,
+      "Keys": [
+        "LeftShift",
+        "F4"
+      ]
+    },
+    "MoveToDisplay5": {
+      "IsDirectMode": false,
+      "Keys": [
+        "LeftShift",
+        "F5"
+      ]
+    },
+    "MoveToDisplay6": {
+      "IsDirectMode": false,
+      "Keys": [
+        "LeftShift",
+        "F6"
+      ]
+    },
+    "MoveToDisplay7": {
+      "IsDirectMode": false,
+      "Keys": [
+        "LeftShift",
+        "F7"
+      ]
+    },
+    "MoveToDisplay8": {
+      "IsDirectMode": false,
+      "Keys": [
+        "LeftShift",
+        "F8"
+      ]
+    },
+    "MoveToDisplay9": {
+      "IsDirectMode": false,
+      "Keys": [
+        "LeftShift",
+        "F9"
+      ]
+    }
+  },
+  "ProcessIgnoreList": [
+    "Taskmgr"
+  ],
+  "ClassIgnoreList": [
+    "OperationStatusWindow"
+  ],
+  "RemindToRateReview": true,
+  "ShowContextHints": true,
+  "MultiMonitorSupport": true,
+  "SoundOnFailure": true
+}
