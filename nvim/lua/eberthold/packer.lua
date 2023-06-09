@@ -23,6 +23,8 @@ return require('packer').startup(function(use)
 		as = "catppuccin"
 	}
 
+	use("petertriho/nvim-scrollbar")
+
 	use('nvim-treesitter/nvim-treesitter', { run = ':TSUpdate' })
 	use('nvim-treesitter/nvim-treesitter-context')
 	use('mbbill/undotree')
