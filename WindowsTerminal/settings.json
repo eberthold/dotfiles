@@ -48,6 +48,7 @@
     {
         "defaults": 
         {
+            "colorScheme": "Ayu Mirage",
             "startingDirectory": "."
         },
         "list": 
@@ -59,6 +60,7 @@
                 "name": "Windows PowerShell"
             },
             {
+                "colorScheme": "Ayu Mirage",
                 "commandline": "%SystemRoot%\\System32\\cmd.exe",
                 "guid": "{0caa0dad-35be-5f56-a8ff-afceeeaa6101}",
                 "hidden": false,
@@ -96,7 +98,7 @@
             },
             {
                 "adjustIndistinguishableColors": "never",
-                "colorScheme": "Catppuccin Frapp\u00e9",
+                "colorScheme": "Ayu Mirage",
                 "font": 
                 {
                     "face": "CaskaydiaCove Nerd Font Mono",
@@ -105,7 +107,7 @@
                 "guid": "{574e775e-4f2a-5b96-ac1e-a2962a402336}",
                 "hidden": false,
                 "name": "PowerShell",
-                "opacity": 80,
+                "opacity": 90,
                 "source": "Windows.Terminal.PowershellCore",
                 "useAcrylic": true
             },
@@ -137,6 +139,29 @@
     },
     "schemes": 
     [
+        {
+            "background": "#1F2430",
+            "black": "#191E2A",
+            "blue": "#6DCBFA",
+            "brightBlack": "#686868",
+            "brightBlue": "#73D0FF",
+            "brightCyan": "#95E6CB",
+            "brightGreen": "#BAE67E",
+            "brightPurple": "#D4BFFF",
+            "brightRed": "#F28779",
+            "brightWhite": "#FFFFFF",
+            "brightYellow": "#FFD580",
+            "cursorColor": "#FFFFFF",
+            "cyan": "#90E1C6",
+            "foreground": "#CBCCC6",
+            "green": "#A6CC70",
+            "name": "Ayu Mirage",
+            "purple": "#CFBAFA",
+            "red": "#ED8274",
+            "selectionBackground": "#FFFFFF",
+            "white": "#C7C7C7",
+            "yellow": "#FAD07B"
+        },
         {
             "background": "#0C0C0C",
             "black": "#0C0C0C",

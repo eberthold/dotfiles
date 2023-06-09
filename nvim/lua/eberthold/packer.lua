@@ -14,11 +14,13 @@ return require('packer').startup(function(use)
 	}
 
 	use {
+		'Shatur/neovim-ayu',
+		as = 'ayu'
+	}
+
+	use {
 		"catppuccin/nvim",
-		as = "catppuccin",
-		config = function()
-			vim.cmd('colorscheme catppuccin-macchiato')
-		end
+		as = "catppuccin"
 	}
 
 	use('nvim-treesitter/nvim-treesitter', { run = ':TSUpdate' })
@@ -91,7 +93,7 @@ return require('packer').startup(function(use)
 	use {
 		'akinsho/bufferline.nvim',
 		tag = "*",
-		requires = 'nvim-tree/nvim-web-devicons' 
+		requires = 'nvim-tree/nvim-web-devicons'
 	}
 
 	use {
