@@ -11,7 +11,7 @@ bar:
   position: "top"
   opacity: 1.0
   background: "#20242cc4"
-  foreground: "#ffffff"
+  foreground: "#FFCC66"
   font_family: "Segoe UI"
   font_size: "13px"
   padding: "4px 6px"
