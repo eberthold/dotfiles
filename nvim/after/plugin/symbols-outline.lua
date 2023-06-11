@@ -1,6 +1,5 @@
 require("symbols-outline").setup {
-	show_numbers = true,
-	show_relative_numbers = false,
+	show_symbol_details=true,
 }
 
 vim.keymap.set("n", "<leader>o", "<cmd>SymbolsOutline<CR>")

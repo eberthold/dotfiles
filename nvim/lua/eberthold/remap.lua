@@ -19,7 +19,7 @@ vim.keymap.set("n", "N", "Nzzzv")
 vim.keymap.set("x", "<leader>p", "\"_dP", { desc="paste keep register" })
 
 -- toggle file tree
-vim.keymap.set("n", "<leader>e", "<cmd>Neotree toggle<CR>", { desc="toggle file tree"})
+vim.keymap.set("n", "<leader>e", "<cmd>Neotree focus<CR>", { desc="toggle file tree"})
 
 -- system wide yank
 vim.keymap.set("v", "<leader>y", "\"+y", {desc = "system wide yank" })

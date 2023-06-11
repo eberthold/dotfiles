@@ -11,3 +11,13 @@ vim.keymap.set('n', '<leader>fgc', builtin.git_commits, { desc = "show project c
 vim.keymap.set('n', '<leader>fgf', builtin.git_bcommits, { desc = "show commits for file" })
 vim.keymap.set('n', '<leader>fgb', builtin.git_branches, { desc = "show git branches" })
 vim.keymap.set('n', '<leader>fgs', builtin.git_status, { desc = "show git status" })
+
+require("telescope").setup {
+	extensions = {
+		["ui-select"] = {
+			require("telescope.themes").get_dropdown{ }
+		}
+	}
+}
+
+require("telescope").load_extension("ui-select")

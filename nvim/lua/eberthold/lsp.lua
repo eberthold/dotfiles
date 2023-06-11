@@ -104,28 +104,26 @@ require("mason-lspconfig").setup_handlers({
 
 local cmp = require("cmp")
 cmp.setup({
-	mapping = {
-		["<down>"] = cmp.mapping(cmp.mapping.select_next_item(), { "i", "c" }),
-		["<up>"] = cmp.mapping(cmp.mapping.select_prev_item(), { "i", "c" }),
-		["<C-w>"] = cmp.mapping.abort(),
-		["<C-Space>"] = cmp.mapping(cmp.mapping.complete(), { "i", "c" }),
-		["<CR>"] = cmp.mapping({
-			i = function(fallback)
-				if cmp.visible() and cmp.get_active_entry() then
-					cmp.confirm({ behavior = cmp.ConfirmBehavior.Replace, select = false })
-				else
-					fallback()
-				end
-			end,
-			s = cmp.mapping.confirm({ select = true }),
-			c = cmp.mapping.confirm({ behavior = cmp.ConfirmBehavior.Replace, select = true }),
-		})
+	completion = {
+		completeopt = 'menu,menuone,noinsert'
 	},
+	preselect = true,
+	mapping = cmp.mapping.preset.insert({
+		['<down>'] = cmp.mapping.select_next_item(),
+		['<up>'] = cmp.mapping.select_prev_item(),
+		['<C-w>'] = cmp.mapping.abort(),
+		['<C-Space>'] = cmp.mapping.complete(),
+		['<CR>'] = cmp.mapping.confirm({ behavior = cmp.ConfirmBehavior.Insert, select = true }),
+	}),
 	sources = {
 		{ name = "nvim_lsp" },
 		{ name = "nvim_lua" },
 		{ name = 'nvim_lsp_signature_help' },
 	},
+	window = {		
+      -- completion = cmp.config.window.bordered(),
+      documentation = cmp.config.window.bordered(),
+    },
 	sorting = {
 		comparators = {
 			cmp.config.compare.exact,
