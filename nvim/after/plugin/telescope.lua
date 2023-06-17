@@ -14,10 +14,10 @@ vim.keymap.set('n', '<leader>fgs', builtin.git_status, { desc = "show git status
 
 require("telescope").setup {
 	extensions = {
-		["ui-select"] = {
-			require("telescope.themes").get_dropdown{ }
-		}
+		--["ui-select"] = {
+		--	require("telescope.themes").get_dropdown{ }
+		--}
 	}
 }
 
-require("telescope").load_extension("ui-select")
+--require("telescope").load_extension("ui-select")

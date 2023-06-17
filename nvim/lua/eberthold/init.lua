@@ -1,4 +1,4 @@
-require("eberthold.packer")
+require("eberthold.lazy")
 require("eberthold.lsp")
 require("eberthold.remap")
 require("eberthold.set")
