@@ -16,15 +16,13 @@ vim.keymap.set("n", "n", "nzzzv")
 vim.keymap.set("n", "N", "Nzzzv")
 
 -- improved paste without overriding register
-vim.keymap.set("x", "<leader>p", "\"_dP", { desc="paste keep register" })
+vim.keymap.set({ "n", "v" }, "<leader>p", "\"+p", { desc="paste clipboard" })
 
 -- toggle file tree
 vim.keymap.set("n", "<leader>e", "<cmd>Neotree focus<CR>", { desc="toggle file tree"})
 
 -- system wide yank
-vim.keymap.set("v", "<leader>y", "\"+y", {desc = "system wide yank" })
-vim.keymap.set("n", "<leader>y", "\"+y", {desc = "system wide yank" })
-vim.keymap.set("n", "<leader>Y", "\"+Y", {desc = "system wide yank" })
+vim.keymap.set({ "n", "v" }, "<leader>y", "\"+y", {desc = "system wide yank" })
 
 -- format document via lsp with vs like shortcut
 vim.keymap.set("n", "<leader>kd", "gg=G<C-O>")
@@ -33,14 +31,14 @@ vim.keymap.set("n", "<leader>kd", "gg=G<C-O>")
 vim.keymap.set("n", "<leader>d", vim.diagnostic.open_float)
 
 -- show code action
-vim.keymap.set("n", "<leader>a", ":lua vim.lsp.buf.code_action()<CR>")
+vim.keymap.set({ "n", "v" }, "<leader>a", ":lua vim.lsp.buf.code_action()<CR>")
 
 -- lsp remaps
-vim.keymap.set("n", "gd", vim.lsp.buf.definition)
-vim.keymap.set("n", "gi", vim.lsp.buf.implementation)
-vim.keymap.set("n", "gD", vim.lsp.buf.declaration)
-vim.keymap.set("n", "gr", vim.lsp.buf.references)
-vim.keymap.set("n", "K", vim.lsp.buf.hover)
+vim.keymap.set("n", "gd", vim.lsp.buf.definition, {desc = "lsp go to definition" })
+vim.keymap.set("n", "gI", vim.lsp.buf.implementation, {desc = "lsp go to implementation" })
+vim.keymap.set("n", "gD", vim.lsp.buf.declaration, {desc = "lsp go to declaration" })
+vim.keymap.set("n", "gr", vim.lsp.buf.references, {desc = "lsp find references "})
+vim.keymap.set("n", "<leader>k", vim.lsp.buf.hover)
 vim.keymap.set("n", "<leader>rr", vim.lsp.buf.rename, { desc = "rename" })
 vim.keymap.set("n", "<C-k>", vim.lsp.buf.signature_help)
 
