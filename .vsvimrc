@@ -35,7 +35,7 @@ nnoremap <leader>fb :vsc Edit.GoToRecentFile<CR>
 nnoremap <leader>fs :vsc Edit.FindInFiles<CR>
 nnoremap <leader>fli :vsc Edit.GoToImplementation<CR>
 nnoremap <leader>flr :vsc Edit.FindAllReferences<CR>
-nnoremap <leader>flr :vsc Edit.GoToDefinition<CR>
+nnoremap <leader>fld :vsc Edit.GoToDefinition<CR>
 nnoremap <leader>c :vsc Edit.Copy<CR>
 nnoremap <leader>p :vsc Edit.Paste<CR>
 vnoremap <leader>c :vsc Edit.Copy<CR>
