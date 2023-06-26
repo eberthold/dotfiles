@@ -56,6 +56,7 @@ require('lazy').setup({
 	'hrsh7th/cmp-nvim-lsp', -- LSP source for nvim-cmp
 	'hrsh7th/cmp-nvim-lua',
 	'hrsh7th/cmp-nvim-lsp-signature-help',
+	'Issafalcon/lsp-overloads.nvim',
 
 	-- Debugging
 	{

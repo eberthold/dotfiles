@@ -21,7 +21,7 @@ vim.keymap.set('n', '<leader>fgs', builtin.git_status, { desc = "show git status
 require("telescope").setup {
 	extensions = {
 		["ui-select"] = {
-			require("telescope.themes").get_cursor {}
+			require("telescope.themes").get_dropdown {}
 		}
 	}
 }
