@@ -16,10 +16,12 @@ vim.keymap.set("n", "n", "nzzzv")
 vim.keymap.set("n", "N", "Nzzzv")
 
 -- improved paste without overriding register
-vim.keymap.set({ "n", "v" }, "<leader>p", "\"+p", { desc="paste clipboard" })
+vim.keymap.set({ "n", "v" }, "<leader>p", "\"+p", { desc="paste from clipboard" })
+vim.keymap.set({ "n", "v" }, "<leader>c", "\"+y", { desc="copy to clipboard" })
 
 -- toggle file tree
-vim.keymap.set("n", "<leader>e", "<cmd>Neotree focus<CR>", { desc="toggle file tree"})
+vim.keymap.set("n", "<leader>ee", "<cmd>Neotree focus<CR>", { desc="toggle file tree" })
+vim.keymap.set("n", "<leader>es", "<cmd>Neotree focus reveal<CR>", { desc="sync file tree with doc" })
 
 -- system wide yank
 vim.keymap.set({ "n", "v" }, "<leader>y", "\"+y", {desc = "system wide yank" })

@@ -1,3 +1,3 @@
 if exists(':GuiFont')
-	:GuiFont CaskaydiaCove Nerd Front Mono:h12
+	:GuiFont CaskaydiaCove NFM Regular:h12
 endif

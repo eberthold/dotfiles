@@ -33,14 +33,16 @@ require('lazy').setup({
 		name = "catppuccin"
 	},
 
+	{ "EdenEast/nightfox.nvim" },
+
 	-- UI Sugar
 	"petertriho/nvim-scrollbar",
 
 	"akinsho/toggleterm.nvim",
 
-	{ 
-		'nvim-treesitter/nvim-treesitter', 
-		 build = ':TSUpdate' 
+	{
+		'nvim-treesitter/nvim-treesitter',
+		build = ':TSUpdate'
 	},
 	'nvim-treesitter/nvim-treesitter-context',
 	'mbbill/undotree',
@@ -50,6 +52,13 @@ require('lazy').setup({
 		"williamboman/mason-lspconfig.nvim",
 		"neovim/nvim-lspconfig",
 	},
+
+	{
+		"L3MON4D3/LuaSnip",
+		-- follow latest release.
+		version = "<CurrentMajor>.*"
+	},
+	{ 'saadparwaiz1/cmp_luasnip' },
 
 	-- Autocompletion
 	'hrsh7th/nvim-cmp',  -- Autocompletion plugin

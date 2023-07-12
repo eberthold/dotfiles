@@ -6,6 +6,7 @@ vim.keymap.set('n', '<leader>fb', builtin.buffers, { desc = "open buffers" })
 vim.keymap.set('n', '<leader>fc', builtin.commands, { desc = "show commands" })
 vim.keymap.set('n', '<leader>fm', builtin.marks, { desc = "show marks" })
 vim.keymap.set('n', '<leader>fa', builtin.quickfix, { desc = "show quickfixes" })
+vim.keymap.set('n', '<leader>ft', builtin.resume, { desc = "toggle last search" })
 
 vim.keymap.set('n', '<leader>fli', builtin.lsp_implementations, { desc = "show implementations" })
 vim.keymap.set('n', '<leader>flr', builtin.lsp_references, { desc = "show references" })
@@ -19,6 +20,18 @@ vim.keymap.set('n', '<leader>fgb', builtin.git_branches, { desc = "show git bran
 vim.keymap.set('n', '<leader>fgs', builtin.git_status, { desc = "show git status" })
 
 require("telescope").setup {
+	defaults = {
+		layout_strategy = 'vertical',
+		layout_config = { 
+			height = 0.9,
+			prompt_position = 'top',
+			mirror = 'true'
+		},
+		path_display = {
+			"shorten_path",
+			"tail"
+		}
+	},
 	extensions = {
 		["ui-select"] = {
 			require("telescope.themes").get_dropdown {}

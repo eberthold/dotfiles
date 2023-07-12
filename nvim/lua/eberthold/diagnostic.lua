@@ -11,6 +11,7 @@ vim.diagnostic.config({
 			min = vim.diagnostic.severity.WARN
 		}
 	},
+	update_in_insert = true,
 	severity_sort = true,
 	float = {
 		source = "always", -- Or "if_many"
