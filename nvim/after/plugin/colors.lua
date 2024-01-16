@@ -10,4 +10,4 @@ function ApplyColors(color)
 	vim.api.nvim_set_hl(0, 'LineNrBelow', { fg = '#9199CC' })
 end
 
-ApplyColors("DuskFox")
+ApplyColors("duskfox")
