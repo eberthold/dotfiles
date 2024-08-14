@@ -55,8 +55,6 @@ require('lazy').setup({
 
 	{
 		"L3MON4D3/LuaSnip",
-		-- follow latest release.
-		version = "<CurrentMajor>.*"
 	},
 	{ 'saadparwaiz1/cmp_luasnip' },
 
@@ -75,7 +73,8 @@ require('lazy').setup({
 	{
 		"rcarriga/nvim-dap-ui",
 		dependencies = {
-			"mfussenegger/nvim-dap"
+			"mfussenegger/nvim-dap",
+			"nvim-neotest/nvim-nio"
 		},
 	},
 

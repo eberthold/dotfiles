@@ -1,4 +1,13 @@
 function ApplyColors(color)
+require("catppuccin").setup ({
+	integrations = {
+		treesitter = true,
+		telescope = {
+			enabled = true
+		}
+	}
+})
+
 	vim.cmd.colorscheme(color)
 
 	--vim.api.nvim_set_hl(0, "Normal", { bg = "none" })
@@ -10,4 +19,5 @@ function ApplyColors(color)
 	vim.api.nvim_set_hl(0, 'LineNrBelow', { fg = '#9199CC' })
 end
 
-ApplyColors("duskfox")
+--ApplyColors("duskfox")
+ApplyColors("catppuccin-macchiato")
