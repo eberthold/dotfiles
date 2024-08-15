@@ -20,4 +20,4 @@ require("catppuccin").setup ({
 end
 
 --ApplyColors("duskfox")
-ApplyColors("catppuccin-macchiato")
+ApplyColors("catppuccin-frappe")

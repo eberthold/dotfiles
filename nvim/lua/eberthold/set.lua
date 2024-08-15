@@ -24,6 +24,8 @@ vim.opt.scrolloff = 8
 -- Unless you are still migrating, remove the deprecated commands from v1.x
 vim.cmd([[ let g:neo_tree_remove_legacy_commands = 1 ]])
 
+vim.cmd("set signcolumn=yes")
+
 vim.opt.shell = "pwsh.exe"
 vim.opt.shellcmdflag = '-command'
 vim.opt.shellquote = ''
