@@ -1,21 +1,6 @@
 local lspconfig = require("lspconfig")
 local lsp_configurations = require('lspconfig.configs')
 local util = require('lspconfig.util')
-if not lsp_configurations.roslyn then
-	lsp_configurations.roslyn = {
-		default_config = {
-			name = 'roslyn',
-			cmd = {
-				"dotnet",
-				"/home/eberthold/.lsp/out/.nuget/microsoft.codeanalysis.languageserver.linux-x64/4.10.0-1.24058.1/content/LanguageServer/linux-x64/Microsoft.CodeAnalysis.LanguageServer.dll",
-				"--logLevel=Information",
-				"--extensionLogDirectory=c:\\temp\\"
-			},
-			filetypes = { 'cs' },
-			root_dir = require('lspconfig.util').root_pattern('*.sln'),
-		}
-	}
-end
 
 if not lsp_configurations.dart then
 	lsp_configurations.dart = {
@@ -44,10 +29,6 @@ end
 local on_attach = function(client, bufnr)
 	-- keymaps
 end
-
-require("lspconfig").roslyn.setup({
-	on_attach = on_attach,
-})
 
 require("lspconfig").dart.setup({
 	on_attach = on_attach,

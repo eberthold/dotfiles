@@ -18,13 +18,11 @@ vim.keymap.set("n", "N", "Nzzzv")
 -- improved paste without overriding register
 vim.keymap.set({ "n", "v" }, "<leader>p", "\"+p", { desc="paste from clipboard" })
 vim.keymap.set({ "n", "v" }, "<leader>c", "\"+y", { desc="copy to clipboard" })
+vim.keymap.set({ "n", "v" }, "<leader>y", "\"+y", {desc = "system wide yank" })
 
 -- toggle file tree
 vim.keymap.set("n", "<leader>ee", "<cmd>Neotree focus<CR>", { desc="toggle file tree" })
 vim.keymap.set("n", "<leader>es", "<cmd>Neotree focus reveal<CR>", { desc="sync file tree with doc" })
-
--- system wide yank
-vim.keymap.set({ "n", "v" }, "<leader>y", "\"+y", {desc = "system wide yank" })
 
 -- format document via lsp with vs like shortcut
 vim.keymap.set("n", "<leader>kd", "gg=G<C-O>")
@@ -34,6 +32,11 @@ vim.keymap.set("n", "<leader>d", vim.diagnostic.open_float)
 
 -- show code action
 vim.keymap.set({ "n", "v" }, "<leader>a", ":lua vim.lsp.buf.code_action()<CR>")
+vim.keymap.set({ "n", "v" }, "<C-.>", ":lua vim.lsp.buf.code_action()<CR>")
+
+vim.keymap.set("n", "<leader>tt", "require('neotest').run.run()", { desc = "run nearest test" })
+vim.keymap.set("n", "<leader>tf", "require('neotest').run.run(vim.fn.expand('%'))", { desc = "run tests in file" })
+vim.keymap.set("n", "<leader>ts", "require('neotest').run.stop()", { desc = "stop tests" })
 
 -- lsp remaps
 vim.keymap.set("n", "gd", vim.lsp.buf.definition, {desc = "lsp go to definition" })

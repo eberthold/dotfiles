@@ -35,6 +35,23 @@ require('lazy').setup({
 
 	{ "EdenEast/nightfox.nvim" },
 
+	-- functionality
+	{
+		"seblj/roslyn.nvim",
+		ft = "cs",
+	},
+
+	{
+	  "nvim-neotest/neotest",
+	  dependencies = {
+		"nvim-neotest/nvim-nio",
+		"nvim-lua/plenary.nvim",
+		"antoinemadec/FixCursorHold.nvim",
+		"nvim-treesitter/nvim-treesitter",
+		"Issafalcon/neotest-dotnet",
+	  }
+	},
+
 	-- UI Sugar
 	"petertriho/nvim-scrollbar",
 
