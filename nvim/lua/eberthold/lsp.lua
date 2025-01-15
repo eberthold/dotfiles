@@ -63,39 +63,41 @@ require("mason-lspconfig").setup_handlers({
 	end,
 })
 
-local cmp = require("cmp")
-cmp.setup({
-	completion = {
-		completeopt = 'menu,menuone,noinsert'
-	},
-	preselect = true,
-	mapping = cmp.mapping.preset.insert({
-		['<down>'] = cmp.mapping.select_next_item(),
-		['<up>'] = cmp.mapping.select_prev_item(),
-		['<C-w>'] = cmp.mapping.abort(),
-		['<C-Space>'] = cmp.mapping.complete(),
-		['<CR>'] = cmp.mapping.confirm({ behavior = cmp.ConfirmBehavior.Insert, select = true }),
-	}),
-	sources = {
-		{ name = "nvim_lsp" },
-		{ name = "nvim_lua" },
-		{ name = 'nvim_lsp_signature_help' },
-		{ name = "luasnip" },
-	},
-	window = {
-		-- completion = cmp.config.window.bordered(),
-		documentation = cmp.config.window.bordered(),
-	},
-	sorting = {
-		comparators = {
-			cmp.config.compare.exact,
-			cmp.config.compare.score,
-			cmp.config.compare.sort_text
-		}
-	},
-	snippet = {
-		expand = function(args)
-			require 'luasnip'.lsp_expand(args.body)
-		end
-	},
-})
+require('blink.cmp').setup()
+
+--local cmp = require("cmp")
+--cmp.setup({
+--	completion = {
+	--	completeopt = 'menu,menuone,noinsert'
+--	},
+--	preselect = true,
+--	mapping = cmp.mapping.preset.insert({
+	--	['<down>'] = cmp.mapping.select_next_item(),
+	--	['<up>'] = cmp.mapping.select_prev_item(),
+	--	['<C-w>'] = cmp.mapping.abort(),
+	--	['<C-Space>'] = cmp.mapping.complete(),
+	--	['<CR>'] = cmp.mapping.confirm({ behavior = cmp.ConfirmBehavior.Insert, select = true }),
+--	}),
+--	sources = {
+	--	{ name = "nvim_lsp" },
+	--	{ name = "nvim_lua" },
+	--	{ name = 'nvim_lsp_signature_help' },
+	--	{ name = "luasnip" },
+--	},
+--	window = {
+	--	-- completion = cmp.config.window.bordered(),
+	--	documentation = cmp.config.window.bordered(),
+--	},
+--	sorting = {
+	--	comparators = {
+		--	cmp.config.compare.exact,
+		--	cmp.config.compare.score,
+		--	cmp.config.compare.sort_text
+	--	}
+--	},
+--	snippet = {
+	--	expand = function(args)
+		--	require 'luasnip'.lsp_expand(args.body)
+	--	end
+--	},
+--})
