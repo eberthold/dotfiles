@@ -23,7 +23,7 @@ disabled=false
 format="[($name)](#8caaee)"
 
 [dotnet]
-style='#512bd4'
+style='#ca9ee6'
 
 [git_branch]
 style='#F1502F'
